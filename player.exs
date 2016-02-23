@@ -6,6 +6,7 @@ defmodule Player do
   end
 
   def deal(player) do
+    IO.puts "dealing player: #{player}"
     GenServer.call player, :deal
   end
 
